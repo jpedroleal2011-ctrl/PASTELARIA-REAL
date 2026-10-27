@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background-image: url("pastelaria.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
+.cadastro-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.cadastro-box {
+    width: 400px;
+
+    padding: 35px 40px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+}
+
+.cadastro-box h1 {
+    color: #c96b25;
+    margin-bottom: 8px;
+}
+
+.cadastro-box p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #c96b25;
+}
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #c96b25;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a95318;
+}
+
+form a {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #c96b25;
+
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
